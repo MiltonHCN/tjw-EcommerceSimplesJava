@@ -20,6 +20,10 @@ CREATE TABLE usuario (
   PRIMARY KEY (id)
 );
 
+ALTER DATABASE gadgets_store CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
+ALTER TABLE produto CONVERT TO CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
+ALTER TABLE usuario CONVERT TO CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
+
 -- Dados para a tabela produto
 INSERT INTO produto (nome, valor, imagem) VALUES 
 ('GeForce RTX 3060', '5300', 'img/GeForce_RTX_3060.png'),
