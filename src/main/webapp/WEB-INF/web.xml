@@ -12,9 +12,37 @@
 		<servlet-class>controller.AdminController</servlet-class>
 	</servlet>
 
+	<servlet>
+		<servlet-name>Controller</servlet-name>
+		<display-name>Controller</display-name>
+		<description></description>
+		<servlet-class>controller.Controller</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>Redirect</servlet-name>
+		<display-name>Redirect</display-name>
+		<description></description>
+		<servlet-class>controller.Redirect</servlet-class>
+	</servlet>
+
 	<servlet-mapping>
 		<servlet-name>AdminController</servlet-name>
 		<url-pattern>/AdminController</url-pattern>
 	</servlet-mapping>
+
+	<servlet-mapping>
+		<servlet-name>Controller</servlet-name>
+		<url-pattern>/Controller</url-pattern>
+	</servlet-mapping>
+
+	<servlet-mapping>
+		<servlet-name>Redirect</servlet-name>
+		<url-pattern>/redirect.jsp</url-pattern>
+	</servlet-mapping>
+
+	<welcome-file-list>
+		<welcome-file> redirect.jsp </welcome-file>
+		<welcome-file> index.jsp </welcome-file>
+	</welcome-file-list>
 
 </web-app>
