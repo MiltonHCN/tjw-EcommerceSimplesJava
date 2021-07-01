@@ -1,6 +1,7 @@
 package controller;
 
 import java.io.IOException;
+import java.io.PrintWriter;
 import java.util.ArrayList;
 
 import javax.servlet.ServletException;
@@ -172,13 +173,11 @@ public class Controller extends HttpServlet {
 
 			boolean check = p.check(listaCarrinho, id);
 
-			if (check)
+			if (check) {								
 				JOptionPane.showMessageDialog(null, "O produto já está no carrinho", "Info",
 						JOptionPane.INFORMATION_MESSAGE);
-			else {
+			}else {
 				listaCarrinho.add(id);
-				JOptionPane.showMessageDialog(null, "Produto adicionado ao carrinho com sucesso!", "Info",
-						JOptionPane.INFORMATION_MESSAGE);
 			}
 
 			request.getRequestDispatcher("index.jsp").forward(request, response);
