@@ -49,7 +49,7 @@
 		</div>
 	 </form>
 	
-	 <footer>
+	 <footer style="margin-top: 30px;">
 		<div class="footer">Copyright &copy; 2021 Milton</div>
 	</footer>
 	

@@ -43,8 +43,8 @@
 					<td style="width: 100px;">R&#36; <c:out value="${produto.getValor()}"></c:out>,00</td>
 					<td style="width: 100px;"><img src="${produto.getImagem()}" height="100" width="150" ></td>
 					<td style="width: 100px;">
-					<a href="<%= request.getContextPath() %>/AdminController?page=edit&id=${produto.getId()}" style="color: #6bb1f8;">Edit</a> |
-					<a href="<%= request.getContextPath() %>/AdminController?page=delete&id=${produto.getId()}" style="color:#6bb1f8;">Delete</a>
+					<a href="<%= request.getContextPath() %>/AdminController?page=edit&id=${produto.getId()}" style="color: #6bb1f8;">Editar</a> |
+					<a href="<%= request.getContextPath() %>/AdminController?page=delete&id=${produto.getId()}" style="color:#6bb1f8;">Deletar</a>
 					</td>
 				</tr>
 			</table>
